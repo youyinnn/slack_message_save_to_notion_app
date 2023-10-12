@@ -15,7 +15,7 @@ app.get("/", (req, res) => {
 });
 
 app.post("/", (req, res) => {
-  console.log(JSON.parse(JSON.stringify(req.body)));
+  console.log(JSON.stringify(req.body));
   res.json(req.body); // <==== req.body will be a parsed JSON object
 });
 
